@@ -39,4 +39,31 @@
   width: 250px;
   margin-bottom: 7px;
 }
+.TopBar form>div {
+  display: flex;
+  flex-flow: row wrap
+}
+
+.TopBar form button {
+  color: aliceblue;
+  height: 2.25em;
+  background-color: yellowgreen;
+  width: 5%;
+  border: none;
+  border-radius: .17em;
+}
+
+.listContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 /*# sourceMappingURL=TopBar.css.map */

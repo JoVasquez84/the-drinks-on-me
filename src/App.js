@@ -2,7 +2,7 @@ import './styles/App.css';
 import { useState, useEffect } from 'react';
 import TopBar from './components/TopBar';
 import Drink from './components/Drink';
-import DrinkDetails from './components/DrinkDetails';
+import DrinkDetails from './components/drink-details/DrinkDetails';
 import { Route, Switch } from 'react-router-dom';
 import Modal from './components/Modal';
 let isRendered = false;
@@ -68,7 +68,7 @@ console.log('Hello im here!')
             fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${matchedName}`)
               .then ((data) => data.json())
               .then ((data) => {
-                  setCurDrink(data) 
+                  setCurDrink(data)
               })
           }
           if (Object.keys(curDrink).length > 0 && (curDrink.drinks[0].strDrink).toLowerCase() === matchedName.toLowerCase()) {
